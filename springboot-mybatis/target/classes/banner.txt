@@ -1,0 +1,17 @@
+${AnsiColor.BRIGHT_YELLOW}
+
+
+  .-~~~~-.
+ / __     \
+| /  \  /  `~~~~~-.
+||    |  0         @
+||    |  _.        |
+\|    |   \       /
+ \    /  /`~~~~~~`
+ ('--'""`)
+ /`"""""`\
+
+
+
+
+${AnsiColor.BRIGHT_BLUE} ::Spring-Boot  ${spring-boot.formatted-version}
