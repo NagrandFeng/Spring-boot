@@ -13,4 +13,6 @@ public interface UserMapper {
     public User[] getAllUser();
 
     public int insert(User user);
+
+    public User findByName(String username);
 }

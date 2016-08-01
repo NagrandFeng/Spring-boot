@@ -1,6 +1,7 @@
 package demo.controller;
 
 import demo.entity.User;
+import demo.service.CacheService;
 import demo.service.UserService;
 import demo.utils.SpringUtil;
 import org.apache.log4j.Logger;
@@ -21,6 +22,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private CacheService cacheService;
 
     @ResponseBody
     @RequestMapping("/userinfo")
@@ -65,5 +69,33 @@ public class UserController {
         logger.info("getBean:" + o);
         return o;
     }
+
+
+    @RequestMapping("/cache/{username}")
+    public User getCache(@PathVariable("username") String username){
+        logger.info("username form web page: "+username);
+        logger.info("若出现数据库查询等字表示是从数据库中取的数据");
+        User user=userService.getCache(username);
+        if(user==null){
+            user=new User(-1,"userFromContro","nopass");
+        }
+//        return user.toString();
+//        String user=cacheService.setCache(username);
+        return user;
+    }
+
+    @RequestMapping("/getAllUser")
+    public String getAllUserCache(){
+        logger.info("得到所有信息");
+        String usernames=cacheService.getAllUser();
+        return usernames;
+    }
+
+  /*  @RequestMapping("/loadcache")
+    public String loadCache(){
+//        User user=cacheService.getReport("admin");
+//        User auser=cacheService.getReport("admin");
+        return user.toString();
+    }*/
 
 }

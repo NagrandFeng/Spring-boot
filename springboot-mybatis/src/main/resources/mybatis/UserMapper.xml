@@ -10,4 +10,7 @@
     <insert id="insert" parameterType="demo.entity.User">
         insert into user(id,username,password) values(null,#{username},#{password})
     </insert>
+    <select id="findByName" resultType="demo.entity.User">
+        select username, id,password from user where username=#{username};
+    </select>
 </mapper>

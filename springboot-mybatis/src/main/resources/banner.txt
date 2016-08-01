@@ -14,4 +14,5 @@ ${AnsiColor.BRIGHT_YELLOW}
 
 
 
+
 ${AnsiColor.BRIGHT_BLUE} ::Spring-Boot  ${spring-boot.formatted-version}
