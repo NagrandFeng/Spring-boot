@@ -85,6 +85,7 @@ SpringApplication
 	2. security.user.name=admin  
 	3. security.user.password=test  
 
+如果不添加，系统会自动分配一个默认的password，用户名为user
 
 
 
