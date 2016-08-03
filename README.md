@@ -111,9 +111,10 @@ server.context-path=/spring-boot
 ##error : mvn spring-boot run启动控制台出现中文乱码的情况
 解决方法
 在配置spring-boot-maven-plugin中添加
+```xml
 <configuration>
        <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
 </configuration>
-
+```
 
 
