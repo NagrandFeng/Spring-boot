@@ -22,12 +22,19 @@ spring-boot-autoconfigure spring-boot提供的自动配置功能
 
 ##各maven包
 spring-boot-starter:核心spring boot starter 提供大部分基础功能，其他starter都依赖于他，因此没有必要显示定义
+
 spring-boot-starter-actuator：主要提供监控、管理和审查应用程序的功能。
+
 spring-boot-starter-jdbc：该starter提供对JDBC操作的支持，包括连接数据库、操作数据库，以及管理数据库连接等等。
+
 spring-boot-starter-data-jpa：JPA starter提供使用Java Persistence API(例如Hibernate等)的依赖库。
+
 spring-boot-starter-data-*：提供对MongoDB、Data-Rest或者Solr的支持。
+
 spring-boot-starter-security：提供所有Spring-security的依赖库。
+
 spring-boot-starter-test：这个starter包括了spring-test依赖以及其他测试框架，例如JUnit和Mockito等等。
+
 spring-boot-starter-web：该starter包括web应用程序的依赖库。
 
 
